@@ -1,0 +1,23 @@
+{
+  "ignorePatterns": [
+    "build/*"
+  ],
+  "plugins": [
+    "import",
+    "import-length",
+    "simple-import-sort"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "react-app",
+    "semistandard"
+  ],
+  "rules": {
+    "import-length/import-length": "error",
+    "import/newline-after-import": "error",
+    "import/no-anonymous-default-export": "error",
+    "import/no-useless-path-segments": "error",
+    "import/order": "error",
+    "simple-import-sort/imports": "error"
+  }
+}
