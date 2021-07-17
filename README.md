@@ -13,7 +13,7 @@ const obj = { id: 5 }; // CORRECT
 
 ## Installation
 
-To install Eslint and it's plugins/config:
+To install Eslint and its plugins/config:
 
 ### `yarn add eslint @babel/eslint-parser eslint-config-standard eslint-config-semistandard eslint-plugin-import eslint-plugin-node eslint-plugin-promise eslint-plugin-import-length eslint-plugin-simple-import-sort eslint-config-react-app --dev`
 
