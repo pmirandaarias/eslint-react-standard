@@ -11,23 +11,22 @@ const obj = { id: 5 } // ERROR, "Missing semicolon"
 const obj = { id: 5 }; // CORRECT
 ```
 
-## Installation
+## Full Installation
 
-To install Eslint and its plugins/config:
+To install Eslint and its plugins/config (standard, semistandard, import sorts, etc) in a project without Eslint preinstalled (like CRA projects) you should:
 
-### `yarn add eslint @babel/eslint-parser eslint-config-standard eslint-config-semistandard eslint-plugin-import eslint-plugin-node eslint-plugin-promise eslint-plugin-import-length eslint-plugin-simple-import-sort eslint-config-react-app --dev`
+`yarn add eslint @babel/core @babel/eslint-parser @babel/preset-react eslint-config-standard eslint-config-react-app eslint-plugin-import eslint-plugin-node eslint-plugin-promise eslint-plugin-import-length eslint-plugin-simple-import-sort --dev`
+
+Otherwise, install:
+
+`yarn add eslint-config-standard eslint-config-semistandard eslint-plugin-node eslint-plugin-promise eslint-plugin-import-length eslint-plugin-simple-import-sort --dev`
 
 ## Configuration
 
-Create an `.eslintrc` file at the root of your project with:
+Create an `.eslintrc.json` file at the root of your project with:
 
 ```
 {
-  "env": {
-    "browser": true,
-    "es6": true,
-    "jest": true
-  },
   "extends": [
     "eslint:recommended",
     "react-app",
@@ -42,9 +41,6 @@ Create an `.eslintrc` file at the root of your project with:
     "import-length",
     "simple-import-sort"
   ],
-  "parserOptions": {
-    "ecmaVersion": 2021
-  },
   "rules": {
     "import-length/import-length": "error",
     "import/newline-after-import": "error",

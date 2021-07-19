@@ -1,9 +1,4 @@
 {
-  "env": {
-    "browser": true,
-    "es6": true,
-    "jest": true
-  },
   "extends": [
     "eslint:recommended",
     "react-app",
@@ -18,9 +13,6 @@
     "import-length",
     "simple-import-sort"
   ],
-  "parserOptions": {
-    "ecmaVersion": 2021
-  },
   "rules": {
     "import-length/import-length": "error",
     "import/newline-after-import": "error",
